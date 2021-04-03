@@ -1,0 +1,51 @@
+[Device]
+Family=ecp5u
+PartType=LFE5U-45F
+PartName=LFE5U-45F-8BG381I
+SpeedGrade=8
+Package=CABGA381
+OperatingCondition=IND
+Status=S
+
+[IP]
+VendorName=Lattice Semiconductor Corporation
+CoreType=LPM
+CoreStatus=Demo
+CoreName=RAM_DQ
+CoreRevision=7.5
+ModuleName=line_uv_bram
+SourceFormat=verilog
+ParameterFileVersion=1.0
+Date=02/15/2021
+Time=11:42:42
+
+[Parameters]
+Verilog=1
+VHDL=0
+EDIF=1
+Destination=Synplicity
+Expression=BusA(0 to 7)
+Order=Big Endian [MSB:LSB]
+IO=0
+Address=2048
+Data=16
+enByte=0
+ByteSize=9
+OutputEn=0
+ClockEn=0
+Optimization=Speed
+Reset=Sync
+Reset1=Sync
+Init=0
+MemFile=
+MemFormat=bin
+EnECC=0
+Pipeline=0
+Write=Normal
+init_data=0
+
+[FilesGenerated]
+=mem
+
+[Command]
+cmd_line= -w -n line_uv_bram -lang verilog -synth lse -bus_exp 7 -bb -arch sa5p00 -type ramdq -device LFE5U-45F -addr_width 11 -data_width 16 -num_words 2048 -cascade -1 -mem_init0 -writemode NORMAL

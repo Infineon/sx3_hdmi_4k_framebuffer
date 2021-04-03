@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="ddr3_ip_inst_eval" device="LFE5U-45F-8BG381I" synthesis="lse" default_implementation="ddr3_ip_inst_eval">
+    <Implementation title="ddr3_ip_inst_eval" dir="ddr3_ip_inst_eval" description="ddr3_ip_inst_eval" default_strategy="ddr3_ip_inst_eval">
+        <Options>
+            <Option name="include path" value="../../src/params/"/>
+            <Option name="top" value="ddr3_sdram_mem_top_ddr3_ip_inst"/>
+        </Options>
+        <Source name="../../../../ddr_clks_ddr3_ip_inst_bb.v" type="Verilog"/>
+        <Source name="../../../../ddr3_ip_inst_bb.v" type="Verilog"/>
+        <Source name="../../impl/ddr3_sdram_mem_top_wrapper_ddr3_ip_inst.v" type="Verilog"/>
+        <Source name="ddr3_ip_inst_eval.lpf" type="Logic Preference"/>
+    </Implementation>
+    <Strategy name="ddr3_ip_inst_eval" file="ddr3_ip_inst_eval.sty"/>
+</BaliProject>
+

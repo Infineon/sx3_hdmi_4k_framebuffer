@@ -1,0 +1,3 @@
+Results of NGD DRC are available in line_uv_bram_drc.log.
+WARNING - synthesis: DRC checking was skipped because the -ngo option was used.
+Writing NGD file G:/cypress_prj/hdmi_Industrial_4k/ddr_ip/line_uv_bram/line_uv_bram.ngo.

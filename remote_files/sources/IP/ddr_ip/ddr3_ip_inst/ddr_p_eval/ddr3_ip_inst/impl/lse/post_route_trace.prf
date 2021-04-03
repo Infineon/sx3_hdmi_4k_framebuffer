@@ -1,0 +1,20 @@
+COMMERCIAL;
+BLOCK RESETPATHS ;
+BLOCK ASYNCPATHS ;
+##########################################################################
+# Frequency Declerations
+##########################################################################
+FREQUENCY NET "clk_in_c" 100 MHz ;
+FREQUENCY NET "sclk" 200.0 MHz PAR_ADJ 40.0 ;
+##########################################################################
+# Block, Maxdelay, Multicycle preferences
+##########################################################################
+BLOCK PATH FROM PORT "rst_*" ;
+BLOCK PATH FROM CLKNET "clk_in_c" TO CLKNET "*eclk" ;
+BLOCK PATH FROM CLKNET "clk_in_c" TO CLKNET "*sclk" ;
+MAXDELAY NET "*/U1_ddr3_sdram_phy/ddr3_read_data_out[*]" 4.50 ns;
+MAXDELAY NET "*/U1_ddr3_sdram_phy/datavalid_o[*]" 4.40 nS ;
+MAXDELAY NET "*/U1_ddr3_sdram_phy/ddrin[*]" 3.00 nS ;
+
+#MULTICYCLE FROM CELL "*/uddcntln"  2.000000 X ;
+

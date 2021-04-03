@@ -1,0 +1,3 @@
+Results of NGD DRC are available in i2s_rx_fifo_drc.log.
+WARNING - synthesis: DRC checking was skipped because the -ngo option was used.
+Writing NGD file F:/cypress_prj/HDMI_Rx_cypress/hdmi_Industrial_4k_audio_check_2/ddr_ip/i2s_rx_fifo/i2s_rx_fifo.ngo.

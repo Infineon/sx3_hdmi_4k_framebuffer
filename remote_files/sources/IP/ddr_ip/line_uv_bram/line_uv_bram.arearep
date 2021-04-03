@@ -1,0 +1,10 @@
+----------------------------------------------------------------------
+Report for cell line_uv_bram.TECH
+Register bits:  0 of 44457 (0.000%)
+I/O cells:      0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             DP16KD         2          100.0
+                                GSR         1          100.0
+                        VERIFIC_PWR         1          100.0
+                              TOTAL         4

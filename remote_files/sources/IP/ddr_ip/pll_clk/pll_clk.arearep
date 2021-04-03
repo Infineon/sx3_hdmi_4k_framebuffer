@@ -1,0 +1,10 @@
+----------------------------------------------------------------------
+Report for cell pll_clk.TECH
+Register bits:  0 of 44457 (0.000%)
+I/O cells:      0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            EHXPLLL         1          100.0
+                                GSR         1          100.0
+                        VERIFIC_PWR         1          100.0
+                              TOTAL         3

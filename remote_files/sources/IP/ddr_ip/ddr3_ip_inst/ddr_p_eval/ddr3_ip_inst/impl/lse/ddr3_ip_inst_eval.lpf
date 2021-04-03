@@ -1,0 +1,62 @@
+COMMERCIAL;
+BLOCK RESETPATHS ;
+BLOCK ASYNCPATHS ;
+BLOCK JTAGPATHS ;
+##########################################################################
+# Frequency Declerations
+##########################################################################
+FREQUENCY NET "sclk*" 200.0 MHz PAR_ADJ 40.0 ;
+FREQUENCY NET "*clkop*" 400.0 MHz PAR_ADJ 80.0 ;
+##########################################################################
+# Block, Maxdelay, Multicycle preferences
+##########################################################################
+BLOCK PATH FROM PORT "rst_*" ;
+BLOCK PATH FROM CLKNET "*clkos*" TO CLKNET "*eclk" ;
+BLOCK PATH FROM CLKNET "*clkos*" TO CLKNET "sclk*" ;
+MAXDELAY NET "*/U1_ddr3_sdram_phy/ddr3_read_data_out[*]" 4.50 ns;
+MAXDELAY NET "*/U1_ddr3_sdram_phy/datavalid_o[*]"        4.40 nS ;
+
+MAXDELAY FROM CELL "*/U1_ddr3_sdram_phy/U1_wr_path/ddr3_wr_data_val_in*" 4.50 nS ;
+MAXDELAY FROM CELL "*/U1_ddr3_sdram_phy/U1_wr_path/ddr3_dqsout_in*"      4.50 nS ;
+MAXDELAY NET       "*/U1_ddr3_sdram_phy/burstdet[*]"                       4.50 nS ;
+MAXDELAY NET       "*/U1_ddr3_sdram_phy/rt_rdclksel[*]"                    4.50 nS ;
+MAXDELAY NET       "*/U1_ddr3_sdram_phy/rt_dqs_read[*]"                    4.50 nS ;
+MAXDELAY NET       "*/U1_ddr3_sdram_phy/dqsbufd_pause"                     4.50 nS ;
+
+
+##########################################################################
+# IO Type Declarations
+##########################################################################
+IOBUF ALLPORTS IO_TYPE=LVCMOS12 ;
+DEFINE PORT GROUP "EM_DDR_DQS_GRP" "em_ddr_dqs[*]" ;
+IOBUF GROUP "EM_DDR_DQS_GRP" IO_TYPE=SSTL15D_I DIFFRESISTOR=100 TERMINATION=OFF SLEWRATE=FAST ;
+IOBUF PORT "em_ddr_clk[0]"   IO_TYPE=SSTL15D_I ;
+
+DEFINE PORT GROUP "EM_DDR_DATA_GRP" "em_ddr_data[*]" ;
+IOBUF GROUP "EM_DDR_DATA_GRP" IO_TYPE=SSTL15_I TERMINATION=75 SLEWRATE=FAST ;
+
+DEFINE PORT GROUP "EM_DDR_DM_GRP" "em_ddr_dm[*]" ;
+IOBUF GROUP "EM_DDR_DM_GRP" IO_TYPE=SSTL15_I SLEWRATE=FAST;
+DEFINE PORT GROUP "EM_DDR_ADDR_GRP" "em_ddr_addr[*]" ;
+IOBUF GROUP "EM_DDR_ADDR_GRP" IO_TYPE=SSTL15_I SLEWRATE=FAST;
+DEFINE PORT GROUP "EM_DDR_BA_GRP" "em_ddr_ba[*]" ;
+IOBUF GROUP "EM_DDR_BA_GRP" IO_TYPE=SSTL15_I SLEWRATE=FAST;
+IOBUF PORT "em_ddr_ras_n" IO_TYPE=SSTL15_I SLEWRATE=FAST;
+IOBUF PORT "em_ddr_cas_n" IO_TYPE=SSTL15_I SLEWRATE=FAST;
+IOBUF PORT "em_ddr_we_n" IO_TYPE=SSTL15_I SLEWRATE=FAST;
+DEFINE PORT GROUP "EM_DDR_CS_GRP" "em_ddr_cs_n[*]" ;
+IOBUF GROUP "EM_DDR_CS_GRP" IO_TYPE=SSTL15_I SLEWRATE=FAST;
+DEFINE PORT GROUP "EM_DDR_ODT_GRP" "em_ddr_odt[*]" ;
+IOBUF GROUP "EM_DDR_ODT_GRP" IO_TYPE=SSTL15_I SLEWRATE=FAST;
+DEFINE PORT GROUP "EM_DDR_CKE_GRP" "em_ddr_cke[*]" ;
+IOBUF GROUP "EM_DDR_CKE_GRP" IO_TYPE=SSTL15_I SLEWRATE=FAST;
+DEFINE PORT GROUP "EM_DDR_CLK_GRP" "em_ddr_clk[*]" ;
+IOBUF GROUP "EM_DDR_CLK_GRP" IO_TYPE=SSTL15D_I SLEWRATE=FAST;
+IOBUF PORT "em_ddr_reset_n" IO_TYPE=SSTL15_I SLEWRATE=FAST;
+##########################################################################
+# LOCATE FOR DQS pins                                                     
+##########################################################################
+
+LOCATE COMP "em_ddr_dqs[0]" SITE "" ;
+LOCATE COMP "em_ddr_dqs[1]" SITE "" ;
+

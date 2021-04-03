@@ -1,0 +1,301 @@
+synthesis:  version Diamond (64-bit) 3.11.2.446
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Mar 12 11:17:26 2021
+
+
+Command Line:  C:\lscc\diamond\3.11_x64\ispfpga\bin\nt64\synthesis.exe -f cam_in_fifo.synproj -sdc F:/cypress_prj/HDMI_Rx_cypress/hdmi_Industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.ldc -gui 
+
+Synthesis options:
+The -a option is ecp5u.
+The -s option is 8.
+The -t option is CABGA381.
+The -d option is LFE5U-45F.
+Using package CABGA381.
+Using performance grade 8.
+                                                          
+
+##########################################################
+
+### Lattice Family : ECP5U
+
+### Device  : LFE5U-45F
+
+### Package : CABGA381
+
+### Speed   : 8
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = cam_in_fifo.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true (default)
+DSP utilization = 100 % (default)
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Use IO Insertion = FALSE
+Use IO Reg = FALSE (implied)
+WARNING - synthesis: Cannot pack registers into I/Os because use_io_insertion is FALSE.
+WARNING - synthesis: Ignoring user setting of use_io_reg. Value is set to FALSE.
+Use IO Reg = FALSE
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p F:/cypress_prj/HDMI_Rx_cypress/hdmi_Industrial_4k_audio_check_2/ddr_ip/cam_in_fifo (searchpath added)
+Verilog design file = C:/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5u.v
+Verilog design file = C:/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v
+Verilog design file = F:/cypress_prj/HDMI_Rx_cypress/hdmi_Industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v
+NGO file = F:/cypress_prj/HDMI_Rx_cypress/hdmi_Industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.ngo
+WARNING - synthesis: Option -force_gsr will be set to false when option -output_edif/-ngo are set
+-sdc option: SDC file input is F:/cypress_prj/HDMI_Rx_cypress/hdmi_Industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.ldc.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/ecp5u.v. VERI-1482
+Analyzing Verilog file c:/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v. VERI-1482
+Analyzing Verilog file f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Top module name (Verilog): cam_in_fifo
+INFO - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(8): compiling module cam_in_fifo. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(25): compiling module AND2. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(367): compiling module INV. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(656): compiling module OR2. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(810): compiling module XOR2. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(710): compiling module ROM16X1A(initval=16'b0110100110010110). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(710): compiling module ROM16X1A(initval=16'b010000010000). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(710): compiling module ROM16X1A(initval=16'b01000000000100). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(710): compiling module ROM16X1A(initval=16'b0101000000). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(710): compiling module ROM16X1A(initval=16'b0100000000000001). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(866): compiling module DP16KD(DATA_WIDTH_A=9,REGMODE_A="OUTREG",REGMODE_B="OUTREG"). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(110): compiling module FD1P3BX. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(119): compiling module FD1P3DX. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(168): compiling module FD1S3DX. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(160): compiling module FD1S3BX. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(76): compiling module CCU2C(INIT0=16'b0110011010101010,INIT1=16'b0110011010101010,INJECT1_0="NO",INJECT1_1="NO"). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(76): compiling module CCU2C(INJECT1_0="NO",INJECT1_1="NO"). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(76): compiling module CCU2C(INIT0=16'b1001100110101010,INIT1=16'b1001100110101010,INJECT1_0="NO",INJECT1_1="NO"). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(757): compiling module VHI. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(761): compiling module VLO. VERI-1018
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(1057): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(1113): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(1169): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(1233): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(1297): input port CIN is not connected on this instance. VDB-1013
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.11_x64/ispfpga.
+Package Status:                     Final          Version 1.43.
+WARNING - synthesis: There are no design constraints in the file F:/cypress_prj/HDMI_Rx_cypress/hdmi_Industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.ldc
+Top-level module name = cam_in_fifo.
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(377): Removing unused instance LUT4_16. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(1225): Removing unused instance rfilld. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(333): Removing unused instance LUT4_27. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(943): Removing unused instance FF_35. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(874): Removing unused instance FF_58. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(657): Removing unused instance FF_115. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(281): Removing unused instance XOR2_t21. VDB-5034
+WARNING - synthesis: There are no design constraints in the file F:/cypress_prj/HDMI_Rx_cypress/hdmi_Industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.ldc
+This ldc file was generated by Clarity Designer!
+
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(271): Removing unused instance _6. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(273): Removing unused instance _7. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(275): Removing unused instance _8. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(277): Removing unused instance _9. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(279): Removing unused instance _10. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(283): Removing unused instance _11. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(285): Removing unused instance _12. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(287): Removing unused instance _13. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(289): Removing unused instance _14. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(291): Removing unused instance _15. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(293): Removing unused instance _16. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(295): Removing unused instance _17. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(297): Removing unused instance _18. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(299): Removing unused instance _19. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(301): Removing unused instance _20. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(303): Removing unused instance _21. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(305): Removing unused instance _22. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(307): Removing unused instance _23. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(309): Removing unused instance _24. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(311): Removing unused instance _25. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(313): Removing unused instance _26. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(315): Removing unused instance _27. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(317): Removing unused instance _28. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(319): Removing unused instance _29. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(321): Removing unused instance _30. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(325): Removing unused instance _31. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(329): Removing unused instance _32. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(337): Removing unused instance _33. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(341): Removing unused instance _34. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(345): Removing unused instance _35. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(349): Removing unused instance _36. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(353): Removing unused instance _37. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(357): Removing unused instance _38. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(361): Removing unused instance _39. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(365): Removing unused instance _40. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(369): Removing unused instance _41. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(373): Removing unused instance _42. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(381): Removing unused instance _43. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(385): Removing unused instance _44. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(389): Removing unused instance _45. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(393): Removing unused instance _46. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(397): Removing unused instance _47. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(401): Removing unused instance _48. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(405): Removing unused instance _49. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(409): Removing unused instance _50. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(413): Removing unused instance _51. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(417): Removing unused instance _52. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(421): Removing unused instance _53. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(425): Removing unused instance _54. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(427): Removing unused instance _55. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(431): Removing unused instance _56. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(435): Removing unused instance _57. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(439): Removing unused instance _58. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(443): Removing unused instance _59. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(482): Removing unused instance _60. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(523): Removing unused instance _61. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(564): Removing unused instance _62. VDB-5034
+WARNING - synthesis: f:/cypress_prj/hdmi_rx_cypress/hdmi_industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.v(604): Removing unused instance _63. VDB-5034
+######## Missing driver on net n449. Patching with GND.
+######## Missing driver on net n450. Patching with GND.
+######## Missing driver on net n451. Patching with GND.
+######## Missing driver on net n448. Patching with GND.
+######## Missing driver on net n447. Patching with GND.
+
+
+
+Duplicate register/latch removal. FF_104 is a one-to-one match with FF_92.
+Duplicate register/latch removal. FF_70 is a one-to-one match with FF_59.
+Duplicate register/latch removal. FF_104 is a one-to-one match with FF_92.
+Duplicate register/latch removal. FF_70 is a one-to-one match with FF_59.
+Duplicate register/latch removal. FF_104 is a one-to-one match with FF_92.
+Duplicate register/latch removal. FF_70 is a one-to-one match with FF_59.
+Duplicate register/latch removal. FF_104 is a one-to-one match with FF_92.
+Duplicate register/latch removal. FF_70 is a one-to-one match with FF_59.
+Duplicate register/latch removal. FF_104 is a one-to-one match with FF_92.
+Duplicate register/latch removal. FF_70 is a one-to-one match with FF_59.
+Duplicate register/latch removal. FF_104 is a one-to-one match with FF_92.
+Duplicate register/latch removal. FF_70 is a one-to-one match with FF_59.
+Duplicate register/latch removal. FF_104 is a one-to-one match with FF_92.
+Duplicate register/latch removal. FF_70 is a one-to-one match with FF_59.
+Duplicate register/latch removal. FF_104 is a one-to-one match with FF_92.
+Duplicate register/latch removal. FF_70 is a one-to-one match with FF_59.
+Duplicate register/latch removal. FF_104 is a one-to-one match with FF_92.
+Duplicate register/latch removal. FF_70 is a one-to-one match with FF_59.
+Duplicate register/latch removal. FF_104 is a one-to-one match with FF_92.
+Duplicate register/latch removal. FF_70 is a one-to-one match with FF_59.
+Duplicate register/latch removal. FF_104 is a one-to-one match with FF_92.
+Duplicate register/latch removal. FF_70 is a one-to-one match with FF_59.
+######## GSR will not be inferred in an NGO flow, unless force_gsr=yes.
+Duplicate register/latch removal. FF_104 is a one-to-one match with FF_92.
+Duplicate register/latch removal. FF_70 is a one-to-one match with FF_59.
+Duplicate register/latch removal. FF_104 is a one-to-one match with FF_92.
+Duplicate register/latch removal. FF_70 is a one-to-one match with FF_59.
+Duplicate register/latch removal. FF_104 is a one-to-one match with FF_92.
+Duplicate register/latch removal. FF_70 is a one-to-one match with FF_59.
+Duplicate register/latch removal. FF_104 is a one-to-one match with FF_92.
+Duplicate register/latch removal. FF_70 is a one-to-one match with FF_59.
+Duplicate register/latch removal. FF_104 is a one-to-one match with FF_92.
+Duplicate register/latch removal. FF_70 is a one-to-one match with FF_59.
+Duplicate register/latch removal. FF_104 is a one-to-one match with FF_92.
+Duplicate register/latch removal. FF_70 is a one-to-one match with FF_59.
+Duplicate register/latch removal. FF_104 is a one-to-one match with FF_92.
+Duplicate register/latch removal. FF_70 is a one-to-one match with FF_59.
+Duplicate register/latch removal. FF_104 is a one-to-one match with FF_92.
+Duplicate register/latch removal. FF_70 is a one-to-one match with FF_59.
+Duplicate register/latch removal. FF_104 is a one-to-one match with FF_92.
+Duplicate register/latch removal. FF_70 is a one-to-one match with FF_59.
+WARNING - synthesis: There are no design constraints in the file cam_in_fifo_for_lpf.sdc
+Writing LPF file F:/cypress_prj/HDMI_Rx_cypress/hdmi_Industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.lpf.
+Results of NGD DRC are available in cam_in_fifo_drc.log.
+WARNING - synthesis: DRC checking was skipped because the -ngo option was used.
+Writing NGD file F:/cypress_prj/HDMI_Rx_cypress/hdmi_Industrial_4k_audio_check_2/ddr_ip/cam_in_fifo/cam_in_fifo.ngo.
+
+################### Begin Area Report (cam_in_fifo)######################
+Number of register bits => 125 of 44457 (0 % )
+AND2 => 2
+CCU2C => 37
+DP16KD => 4
+FD1P3BX => 2
+FD1P3DX => 66
+FD1S3BX => 1
+FD1S3DX => 56
+GSR => 1
+INV => 2
+OR2 => 1
+ROM16X1A => 28
+XOR2 => 21
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 0
+Clock Enable Nets
+Number of Clock Enables: 2
+Top 2 highest fanout Clock Enables:
+  Net : wren_i, loads : 45
+  Net : rden_i, loads : 39
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : rRst, loads : 67
+  Net : wren_i, loads : 45
+  Net : rden_i, loads : 39
+  Net : w_g2b_xor_cluster_0, loads : 7
+  Net : w_gcount_r211, loads : 6
+  Net : wcount_11, loads : 6
+  Net : rcount_10, loads : 6
+  Net : r_g2b_xor_cluster_0, loads : 6
+  Net : r_gcount_w210, loads : 5
+  Net : rptr_0, loads : 5
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk501 [get_nets RdClock]               |  200.000 MHz|  145.012 MHz|    10 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk500 [get_nets WrClock]               |  200.000 MHz|  148.082 MHz|    11 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+
+Peak Memory Usage: 85.852  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.750  secs
+--------------------------------------------------------------
